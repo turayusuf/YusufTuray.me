@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+	outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background: url('subscribe.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+  }
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+}
+
+.wrapper h1{
+	margin-bottom: 40px;
+	font-size: 42px;
+	color: #1583C5;
+	text-align: center;
+}
+
+.wrapper p{
+	margin-bottom: 30px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.newsletter{
+	max-width: 500px;
+	width: 100%;
+	position: relative;
+}
+
+.newsletter .input{
+	width: 100%;
+	padding: 30px 100px 30px 60px;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+}
+
+.newsletter .fas{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	left: 20px;
+	font-size: 20px;
+}
+
+.newsletter .btn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	background: #4dabf7;
+	padding: 15px 20px;
+	border-radius: 20px;
+	font-size: 14px;
+	letter-spacing: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
